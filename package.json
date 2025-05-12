@@ -32,5 +32,9 @@
     "html-webpack-plugin": "^5.6.3",
     "husky": "^9.1.7",
     "webpack-dev-server": "^5.2.1"
+  },
+  "lint-staged": {
+  "*.js": "eslint --fix",
+  "*.{json,css,md}": "prettier --write"
   }
 }
