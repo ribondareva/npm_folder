@@ -9,10 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  plugins: [
-    // new webpack.DefinePlugin({
-    //   'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV), // Передаем переменную окружения в код
-    // }),
+  plugins: [   
     new HtmlWebpackPlugin({
       template: './public/index.html',
       title: 'Webpack App',
